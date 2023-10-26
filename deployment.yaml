@@ -18,7 +18,7 @@ spec:
         app: flaskdemo
     spec:
       containers:
-      - image: raj80dockerid/test:latest
+      - image: alpine:latest
         name: flaskdemo
         resources: {}
 status: {}
@@ -33,6 +33,6 @@ spec:
   type: LoadBalancer
   ports:
   - port: 80
-    targetPort: 5000
+    targetPort: 8080
   selector:
     app: flaskdemo
